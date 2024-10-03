@@ -12,3 +12,8 @@ output "subnet_id" {
   description = "The ID of the subnet"
   value = aws_subnet.public.id
 }
+
+output "default_security_group_id" {
+  description = "Default Security Group ID"
+  value = aws_vpc.vpc.default_security_group_id
+}
